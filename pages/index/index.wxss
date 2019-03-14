@@ -1,0 +1,23 @@
+.con{
+  text-align: center;
+  padding: 20px;
+}
+.wtwo{
+  width: 375rpx;
+}
+.tem_v{
+  text-align: center;
+  line-height: 50px;
+}
+.fl{
+  display: inline-block;
+  text-align: center;
+}
+.cla12{
+  font-size: 12px;
+}
+
+.nth{
+  width: 50%;
+  height: 100%;
+}

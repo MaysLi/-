@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wo/wo",
+    "pages/index/erji/erji",
+    "pages/index/erji/sanji/sanji",
+    "pages/sousuo/sousuo",
+    "pages/tiujian/tiujian",
+    "pages/liaotian/liaotian"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6CC3C1",
+    "navigationBarTitleText": "衣号店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#6CC3C1",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/iocn_shouye1.png",
+        "selectedIconPath": "images/iocn_shouye2.png"
+      },
+      {
+        "pagePath": "pages/tiujian/tiujian",
+        "text": "推荐",
+        "iconPath": "images/iocn_tiujian1.png",
+        "selectedIconPath": "images/iocn_tiujian2.png"
+      },
+      {
+        "pagePath": "pages/sousuo/sousuo",
+        "text": "搜索",
+        "iconPath": "images/iocn_sousuo1.png",
+        "selectedIconPath": "images/iocn_sousuo2.png"
+      },
+      {
+        "pagePath": "pages/liaotian/liaotian",
+        "text": "聊天",
+        "iconPath": "images/iocn_liaotian1.png",
+        "selectedIconPath": "images/iocn_liaotian2.png"
+      },
+      {
+        "pagePath": "pages/wo/wo",
+        "text": "我",
+        "iconPath": "images/iocn_wo1.png",
+        "selectedIconPath": "images/iocn_wo2.png"
+      }
+    ]
+  }
+}

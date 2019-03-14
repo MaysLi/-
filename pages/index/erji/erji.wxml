@@ -1,0 +1,7 @@
+<!--pages/index/erji/erji.wxml-->
+<view>
+  <view class='fon'>二级栏目</view>
+  <view wx:for="{{arr}}" wx:key="{{index}}" class="bj" bindtap='gotosanji' data-id="{{item.id}}">
+    {{item.name}}
+  </view>
+</view>

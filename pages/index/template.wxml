@@ -1,0 +1,46 @@
+
+<!-- 轮播 -->
+<template name="msgItem">
+  <view style='margin-bottom: 10px;'>
+    <swiper
+      indicator-dots="{{true}}"
+      indicator-color="rgba(255,255,255,.5)"
+      indicator-active-color="#ffffff"
+      autoplay="{{true}}"
+      interval="2000"
+      style="width:{{windowWidth}}px;height:{{300 / 750 * windowWidth}}px"
+    >
+      <block wx:for="{{arr}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src='{{item.picurl}}' style="width:{{windowWidth}}px;height:{{300 / 750 * windowWidth}}px" bindtap='gotolink' data-link="{{item.link}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>
+
+<!-- 分类 -->
+<template name="iocn_ls">
+  <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 5}}px; height: {{windowWidth / 5}}px' class='fl'>
+    <view><image src='{{item.picurl}}' style='width: {{windowWidth / 5*0.6}}px; height: {{windowWidth / 5*0.6}}px' bindtap='gotolink' data-link="{{item.link}}"></image></view>
+    <view class='cla12'>{{item.txt}}</view>
+  </view>
+</template>
+
+<!-- 推荐 -->
+<template name="grid">
+  <view>
+    <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2}}px; height: 150px; float:left'>
+      <image src='{{item.picurl}}' style='height: 150px'></image>
+    </view>
+  </view>
+</template>
+
+<!-- 筛选 -->
+<template name="screen">
+  <view>
+    <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2}}px; height: 150px; float:left'>
+      <image src='{{item.picurl}}' style='height: 150px'></image>
+    </view>
+  </view>
+</template>

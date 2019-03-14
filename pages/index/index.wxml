@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<!-- <view class='con'>
+  首页
+</view>
+<button class='wtwo' data-link="/pages/index/erji/erji" bindtap='gotolink'>进入二级页</button> -->
+
+<import src="./template.wxml" />
+<view>
+  <template is="{{item.usename}}" wx:for="{{item}}" wx:key="{{index}}" data="{{...item.info}}" />
+</view>

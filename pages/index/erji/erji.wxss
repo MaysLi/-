@@ -1,0 +1,11 @@
+/* pages/index/erji/erji.wxss */
+.fon{
+  text-align: center;
+  font-size: 40px;
+}
+.bj{
+  width: 750rpx;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
