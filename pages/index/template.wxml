@@ -58,7 +58,7 @@
   </view> -->
   <view style='width: {{windowWidth}}px; height: 650px;  background: #fff; border-radius: 8px;'>
     <view style='width: {{windowWidth}}px; height: 40px;'>
-      <view style='width: {{windowWidth * 3 / 4 - 10 }}px; padding-left: 10px;' class='rm'>热门品牌</view>
+      <view style='width: {{windowWidth * 3 / 4 - 10 }}px; padding-left: 10px;' class='rm'>热门推荐</view>
       <view style='width: {{windowWidth * 1 / 4}}px;' class='rm' bindtap='more'>查看更多> </view>
     </view>
     <view style='width: {{windowWidth}}px; height: 200px;'>
