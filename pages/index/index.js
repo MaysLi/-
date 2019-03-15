@@ -115,42 +115,48 @@ Page({
               picurl: "/images/img1.png", 
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji"
+              link: "/pages/index/erji/erji",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
               collection: 23,
               picurl: "/images/img1.png", 
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji"
+              link: "/pages/index/erji/erji",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
               collection: 53,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji"
+              link: "/pages/index/erji/erji",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
               collection: 283,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji"
+              link: "/pages/index/erji/erji",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
               collection: 156,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji"
+              link: "/pages/index/erji/erji",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
               collection: 258,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji"
+              link: "/pages/index/erji/erji",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             }
           ]
         }

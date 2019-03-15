@@ -1,66 +1,94 @@
 // pages/sousuo/sousuo.js
+
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    windowWidth: app.globalData.windowWidth,
+    arr: [
+      {
+        collection: 136,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 155,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 256,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 145,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 16,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 36,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection:6,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 20,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        collection: 56,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   }
 })

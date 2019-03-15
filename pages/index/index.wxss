@@ -58,6 +58,8 @@
 }
 
 .rosepa{
+  height: 26px; 
+  line-height: 13px;
   font-size: 9px;
   color: #707070;
   overflow: hidden;

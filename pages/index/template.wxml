@@ -65,8 +65,8 @@
       <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2 - 15}}px; height: 200px; padding-bottom: 10px;' class='bj'>
         <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='gotolink' data-link="{{item.link}}"></image>
         <view style='height: 60px;'>
-          <view style='height: 26px; line-height: 13px;' class='rosepa'>
-            🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～
+          <view class='rosepa'>
+            {{item.txt}}
           </view>
           <view style='height: 30px; padding-top: 4px;'>
             <view class='bjlr lw' bindtap='shops'>
