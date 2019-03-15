@@ -14,6 +14,10 @@ Page({
     ]
   },
   gotosanji(e){
-     console.log(e);
+      console.log(e.target.dataset.id);
+      var id = e.target.dataset.id
+      wx.navigateTo({
+        url: '/pages/index/erji/sanji/sanji?id=' + id
+      })
   }
 })

@@ -1,7 +1,7 @@
 
 <!-- 轮播 -->
 <template name="msgItem">
-  <view style='margin-bottom: 10px;'>
+  <view style='background: #fff; padding-bottom: 10px;'>
     <swiper
       indicator-dots="{{true}}"
       indicator-color="rgba(255,255,255,.5)"
@@ -12,35 +12,74 @@
     >
       <block wx:for="{{arr}}" wx:key="{{index}}">
         <swiper-item>
-          <image src='{{item.picurl}}' style="width:{{windowWidth}}px;height:{{300 / 750 * windowWidth}}px" bindtap='gotolink' data-link="{{item.link}}"></image>
+          <image src='{{item.picurl}}' style="width:{{windowWidth}}px;height:{{300 / 750 * windowWidth}}px" bindtap='more' data-link="{{item.link}}"></image>
         </swiper-item>
       </block>
     </swiper>
   </view>
 </template>
 
-<!-- 分类 -->
+<!-- 分类 筛选 -->
 <template name="iocn_ls">
-  <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 5}}px; height: {{windowWidth / 5}}px' class='fl'>
-    <view><image src='{{item.picurl}}' style='width: {{windowWidth / 5*0.6}}px; height: {{windowWidth / 5*0.6}}px' bindtap='gotolink' data-link="{{item.link}}"></image></view>
-    <view class='cla12'>{{item.txt}}</view>
+  <view style='padding-bottom: 8px;'>
+    <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 5}}px; height: {{windowWidth / 5}}px; background: #fff;' class='fl'>
+      <view>
+        <image src='{{item.picurl}}' style='width: {{windowWidth / 5*0.6}}px; height: {{windowWidth / 5*0.6}}px' bindtap='gotolink' data-link="{{item.link}}"></image>
+      </view>
+      <view class='cla12'>{{item.txt}}</view>
+    </view>
+  </view>
+</template>
+
+<!-- 展示 -->
+<template name="grid">
+  <view style='width: {{windowWidth}}px; height: 190px; margin-bottom: 10px; background: #fff; border-radius: 8px;'>
+    <view style='width: {{windowWidth}}px; height: 40px;'>
+      <view style='width: {{windowWidth * 3 / 4 - 10 }}px; padding-left: 10px;' class='rm'>热门品牌</view>
+      <view style='width: {{windowWidth * 1 / 4}}px;' class='rm' bindtap='more'>查看更多> </view>
+    </view>
+    <view style='width: {{windowWidth}}px; height: 150px;'>
+      <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2 - 15}}px; height: 140px;' class='bj'>
+        <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='gotolink' data-link="{{item.link}}"></image>
+      </view>
+    </view>
   </view>
 </template>
 
 <!-- 推荐 -->
-<template name="grid">
-  <view>
-    <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2}}px; height: 150px; float:left'>
-      <image src='{{item.picurl}}' style='height: 150px'></image>
-    </view>
-  </view>
-</template>
-
-<!-- 筛选 -->
 <template name="screen">
-  <view>
-    <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2}}px; height: 150px; float:left'>
-      <image src='{{item.picurl}}' style='height: 150px'></image>
+  <!-- <view style='width: {{windowWidth}}px; height: 350px; background:#fff; margin-top: 10px;'>
+    <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / item.length}}px' class='font1' bindtap='getnav' bind-name="{{item}}">
+      {{item}}
     </view>
+    <view wx:for="{{arr2}}" wx:key="{{index}}" style='width: {{windowWidth / 2}}px; height: 150px; float:left'>
+      <image src='{{item.picurl}}' style='width: {{windowWidth / 2}}px; height: 150px' bindtap='gotolink' data-link="{{item.link}}"></image>
+    </view>
+  </view> -->
+  <view style='width: {{windowWidth}}px; height: 650px;  background: #fff; border-radius: 8px;'>
+    <view style='width: {{windowWidth}}px; height: 40px;'>
+      <view style='width: {{windowWidth * 3 / 4 - 10 }}px; padding-left: 10px;' class='rm'>热门品牌</view>
+      <view style='width: {{windowWidth * 1 / 4}}px;' class='rm' bindtap='more'>查看更多> </view>
+    </view>
+    <view style='width: {{windowWidth}}px; height: 200px;'>
+      <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2 - 15}}px; height: 200px; padding-bottom: 10px;' class='bj'>
+        <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='gotolink' data-link="{{item.link}}"></image>
+        <view style='height: 60px;'>
+          <view style='height: 26px; line-height: 13px;' class='rosepa'>
+            🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～
+          </view>
+          <view style='height: 30px; padding-top: 4px;'>
+            <view class='bjlr lw' bindtap='shops'>
+              <image src='{{item.picur2}}' class='imgsize'></image><text class='textsize'>rosepa</text>
+            </view>
+            <view class='bjlr rw'>
+              <image src='{{item.picur3}}' class='imgsize imgmin' bindtap='addnumber' data-url="{{item.picur3}}"></image>
+              <text class='textsize' data-number="{{item.collection}}">{{item.collection}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    
   </view>
 </template>

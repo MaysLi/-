@@ -4,6 +4,7 @@ const app = getApp();
 
 Page({
   data: {
+    windowWidth: app.globalData.windowWidth,
     item: [
       {
         usename: "msgItem",
@@ -107,13 +108,48 @@ Page({
         usename: "screen",
         info: {
           windowWidth: app.globalData.windowWidth,
+          // arr: ["推荐1", "推荐2", "推荐3"],
           arr: [
             {
-              picurl: "/images/img1.png",
+              collection: 123,
+              picurl: "/images/img1.png", 
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
               link: "/pages/index/erji/erji"
             },
             {
+              collection: 23,
+              picurl: "/images/img1.png", 
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
+              link: "/pages/index/erji/erji"
+            },
+            {
+              collection: 53,
               picurl: "/images/img1.png",
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
+              link: "/pages/index/erji/erji"
+            },
+            {
+              collection: 283,
+              picurl: "/images/img1.png",
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
+              link: "/pages/index/erji/erji"
+            },
+            {
+              collection: 156,
+              picurl: "/images/img1.png",
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
+              link: "/pages/index/erji/erji"
+            },
+            {
+              collection: 258,
+              picurl: "/images/img1.png",
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
               link: "/pages/index/erji/erji"
             }
           ]
@@ -121,11 +157,46 @@ Page({
       }
     ]
   },
+
+  // 换页
   gotolink(e){
     // console.log(e.target.dataset.link);
     const link = e.target.dataset.link;
     wx.navigateTo({
       url: link
+    })
+  },
+
+  // 切换导航
+  // getnav(e) {
+  //   console.log(e.target);
+  //   wx.navigateTo({
+  //     url: "/pages/index/more/more"
+  //   })
+  // },
+
+  // 更多商品
+  more(e){
+    // console.log(e.target.dataset.link);
+    wx.navigateTo({
+      url: "/pages/index/more/more"
+    })
+  },
+
+  // 收藏
+  addnumber(e){
+    // console.log(e.target.dataset.url);
+    // console.log(e.target);
+    // // url = e.target.dataset.url;
+    // this.setData({
+    //   this.data.
+    // });
+  },
+
+  // 商铺
+  shops(e){
+    wx.navigateTo({
+      url: "/pages/index/shops/shops"
     })
   }
 })

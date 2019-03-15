@@ -1,3 +1,4 @@
+
 .con{
   text-align: center;
   padding: 20px;
@@ -17,7 +18,94 @@
   font-size: 12px;
 }
 
-.nth{
-  width: 50%;
-  height: 100%;
+.font1{
+  height: 40px; 
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
 }
+
+.rm{
+  float: left;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.bj{
+  float:left;
+  padding-left: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.scroll-view-item_H{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.bc_green{
+  background: green;
+}
+.bc_red{
+  background: red;
+}
+.bc_yellow{
+  background: yellow;
+}
+.bc_blue{
+  background: blue;
+}
+
+.rosepa{
+  font-size: 9px;
+  color: #707070;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+}
+
+.bjlr{
+  height: 34px;
+  float: left;
+}
+
+.lw{
+  width: 67%;
+}
+
+.rw{
+  width: 33%;
+}
+
+.imgsize{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  float:left;
+  margin: 0 3px 0 3px;
+}
+
+.imgmin{
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.textsize{
+  font-size: 11px;
+  line-height: 25px;
+  float:left;
+}
+
+
+
+
+
+
+
+
+
+

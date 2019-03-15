@@ -6,7 +6,9 @@
     "pages/index/erji/sanji/sanji",
     "pages/sousuo/sousuo",
     "pages/tiujian/tiujian",
-    "pages/liaotian/liaotian"
+    "pages/liaotian/liaotian",
+    "pages/index/more/more",
+    "pages/index/shops/shops"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,5 +1,5 @@
 <!--pages/index/erji/sanji/sanji.wxml-->
 <text>
-  三级
+  三级{{id}}
 </text>
  
