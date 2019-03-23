@@ -8,7 +8,8 @@
     "pages/tiujian/tiujian",
     "pages/liaotian/liaotian",
     "pages/index/more/more",
-    "pages/index/shops/shops"
+    "pages/index/shops/shops",
+    "pages/liaotian/xinxi/xinxi"
   ],
   "window": {
     "backgroundTextStyle": "light",

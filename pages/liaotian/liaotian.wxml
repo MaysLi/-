@@ -1,2 +1,26 @@
 <!--pages/liaotian/liaotian.wxml-->
-<text>pages/liaotian/liaotian.wxml</text>
+<view style='height: 30px;'>
+  <view class='inf_bg1' style='width: {{windowWidth}}px'></view>
+  <view class='inf_bg2' style='width: {{windowWidth - 20}}px'>
+    <view wx:for='{{tit}}' wx:key='{{index}}' class='inf' style='width: 100px' bindtap='todoxinxi' data-url='{{item.link}}'>{{item.title}}</view>
+  </view>
+</view>
+
+<view style='background: #fff; padding-top: 20px;'>
+  <view wx:for='{{arr}}' wx:key='{{index}}' class='box' style='width: {{windowWidth}}px'>
+    <image src='{{item.picurl}}' class='imgsize'></image>
+    <view class='tit' style='{{windowWidth - 60}}px'>
+      <view class='tit1'>{{item.title}}</view>
+      <view class='tit2'>{{item.titleSize}}</view>
+      <view class='tit3'>{{item.timer}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
