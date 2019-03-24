@@ -1,4 +1,4 @@
 <!--pages/liaotian/xinxi/xinxi.wxml-->
 <view class='tit' style='{{windowWidth}}px'>物流信息</view>
 <import src='../../templates/logistics/logistics.wxml' />
-<template wx:for='{{item}}' wx:key='{{index}}' is='wuliu' data='{{...item}}' />
+<template wx:for='{{item}}' wx:key='{{index}}' is='{{item.usename}}' data='{{...item}}' />

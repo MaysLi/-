@@ -1,2 +1,8 @@
 <!--pages/index/more/more.wxml-->
-<text>更多详情</text>
+<import src='../../templates/Mores/more.wxml' />
+<template wx:for='{{item}}' wx:key='{{index}}' is='{{item.usename}}' data='{{...item}}'  />
+
+
+
+
+

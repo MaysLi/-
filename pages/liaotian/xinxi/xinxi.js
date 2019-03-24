@@ -11,7 +11,7 @@ Page({
     windowWidth: app.globalData.windowWidth,
     item: [
       {
-        usenmae: 'wuliu',
+        usename: 'wuliu',
         windowWidth: app.globalData.windowWidth,
         arr: [
           {

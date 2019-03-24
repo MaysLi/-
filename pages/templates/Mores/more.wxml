@@ -1,0 +1,16 @@
+<!--pages/templates/Mores/more.wxml-->
+<template name='mores'>
+  <view wx:for='{{arr}}' wx:key='{{index}}' style='margin-bottom: 10px;'>
+    <view class='timer'>{{item.timer}}</view>
+    <view class='box' style='width: {{windowWidth - 20}}px'>
+      <view class='title'>
+        <image src='{{item.picurl}}' style='width: {{windowWidth - 20}}px; height: 130px;'></image>
+        <view class='tit'>{{item.title}}</view>
+      </view>
+      <view wx:for='{{item.info}}' wx:key='{{index}}' class='bgb'>
+        <image src='{{item.pic}}' class='imgsize'></image>
+        <view class='tit_1' style='width: {{windowWidth - 110}}px'>{{item.tit}}</view>
+      </view>
+    </view>
+  </view>
+</template>

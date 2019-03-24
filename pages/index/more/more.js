@@ -1,66 +1,53 @@
 // pages/index/more/more.js
+
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    item: [
+      {
+        usename: 'mores',
+        windowWidth: app.globalData.windowWidth,
+        arr: [
+          {
+            timer: '2月28日 17:35',
+            picurl: '/images/img1.png',
+            title: '早春没点“粉色”，怎么招桃花？',
+            info: [
+              {
+                pic: '/images/img1.png',
+                tit: '【西装穿四季】实力演绎什么套路都能接招'
+              },
+              {
+                pic: '/images/img1.png',
+                tit: '【西装穿四季】实力演绎什么套路都能接招'
+              }
+            ]
+          },
+          {
+            timer: '2月28日 17:35',
+            picurl: '/images/img1.png',
+            title: '早春没点“粉色”，怎么招桃花？',
+            info: [
+              {
+                pic: '/images/img1.png',
+                tit: '【西装穿四季】实力演绎什么套路都能接招'
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   }
 })
