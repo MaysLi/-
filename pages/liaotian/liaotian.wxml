@@ -2,7 +2,7 @@
 <view style='height: 30px;'>
   <view class='inf_bg1' style='width: {{windowWidth}}px'></view>
   <view class='inf_bg2' style='width: {{windowWidth - 20}}px'>
-    <view wx:for='{{tit}}' wx:key='{{index}}' class='inf' style='width: 100px' bindtap='todoxinxi' data-url='{{item.link}}'>{{item.title}}</view>
+    <view wx:for='{{tit}}' wx:key='{{index}}' class='inf' style='width: {{(windowWidth - 20) / 3}}px' bindtap='todoxinxi' data-url='{{item.link}}'>{{item.title}}</view>
   </view>
 </view>
 
