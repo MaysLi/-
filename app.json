@@ -9,7 +9,8 @@
     "pages/liaotian/liaotian",
     "pages/index/more/more",
     "pages/index/shops/shops",
-    "pages/liaotian/xinxi/xinxi"
+    "pages/liaotian/xinxi/xinxi",
+    "pages/templates/logistics/logistics"
   ],
   "window": {
     "backgroundTextStyle": "light",

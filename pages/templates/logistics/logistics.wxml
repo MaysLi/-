@@ -1,0 +1,14 @@
+<!--pages/templates/logistics/logistics.wxml-->
+<template name='wuliu'>
+  <view wx:for='{{arr}}' wx:key='{{index}}' style='width: {{windowWidth - 20}}px;' class='box'>
+    <view class='wl_l'>{{item.title}}</view>
+    <view class='wl_r'>{{item.timer}}</view>
+    <view class='wl_b' style='width: {{windowWidth - 40}}px'>
+      <image src='{{item.picurl}}' class='imgsize'></image>
+      <view style='margin: 10px 0 0 90px;'>
+        <view style='width: {{windowWidth - 140}}px' class='describe'>{{item.describe}}</view>
+        <view style='width: {{windowWidth - 140}}px' class='number'>运单编号：{{item.number}}</view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -12,11 +12,11 @@ Page({
   data: {
     tit:[
       {
-        title: '物流信息',
+        title: '交易物流',
         link: '/pages/liaotian/xinxi/xinxi'
       },
       {
-        title: '通知信息',
+        title: '宝贝通知',
         link: '/pages/liaotian/xinxi/xinxi'
       },
       {

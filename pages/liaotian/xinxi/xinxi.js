@@ -1,11 +1,43 @@
 // pages/liaotian/xinxi/xinxi.js
+
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    windowWidth: app.globalData.windowWidth,
+    item: [
+      {
+        usenmae: 'wuliu',
+        windowWidth: app.globalData.windowWidth,
+        arr: [
+          {
+            title: '订单已签收',
+            timer: '19/02/18',
+            picurl: '/images/img1.png',
+            describe: '独行少女·定制款·ins 韩 宽松百搭针织麻花背心吊带...',
+            number: '3969452290320'
+          },
+          {
+            title: '订单已签收',
+            timer: '19/01/03',
+            picurl: '/images/img1.png',
+            describe: '独行少女·定制款·ins 韩 宽松百搭针织麻花背心吊带...',
+            number: '3969452290320'
+          },
+          {
+            title: '订单已签收',
+            timer: '18/12/12',
+            picurl: '/images/img1.png',
+            describe: '独行少女·定制款·ins 韩 宽松百搭针织麻花背心吊带...',
+            number: '3969452290320'
+          }
+        ]
+      }
+    ]
   },
 
   /**

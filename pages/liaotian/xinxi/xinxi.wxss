@@ -1,1 +1,58 @@
 /* pages/liaotian/xinxi/xinxi.wxss */
+
+.tit{
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.box{
+  background: #fff;
+  height: 130px;
+  border-radius: 8px;
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.box .wl_l{
+  position: absolute;
+  left: 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.box .wl_r{
+  position: absolute;
+  right: 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 10px;
+  color: #999;
+}
+.box .wl_b{
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  height: 80px;
+  font-size: 12px;
+  border-radius: 4px;
+  background: #faf8f8;
+  overflow: hidden;
+}
+.imgsize{
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.describe{
+  font-size: 12px;
+  line-height: 20px;
+}
+.number{
+  font-size: 10px;
+  color: #999;
+  line-height: 30px;
+}
+
+
