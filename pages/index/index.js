@@ -6,6 +6,7 @@ Page({
   data: {
     windowWidth: app.globalData.windowWidth,
     item: [
+      //轮播
       {
         usename: "msgItem",
         info: {
@@ -30,6 +31,7 @@ Page({
           ]
         }
       },
+      // 分类 筛选
       {
         usename: "iocn_ls",
         info: {
@@ -88,6 +90,7 @@ Page({
           ]
         }
       },
+      //展示
       {
         usename: "grid",
         info: {
@@ -104,6 +107,7 @@ Page({
           ]
         }
       },
+      //推荐
       {
         usename: "screen",
         info: {
@@ -111,51 +115,66 @@ Page({
           // arr: ["推荐1", "推荐2", "推荐3"],
           arr: [
             {
+              id: 1,
               collection: 123,
               picurl: "/images/img1.png", 
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji",
+              link: "/pages/index/erji/sanji/sanji?id=",
               txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
+              id: 2,
               collection: 23,
               picurl: "/images/img1.png", 
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji",
+              link: "/pages/index/erji/sanji/sanji?id=",
               txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
+              id: 3,
               collection: 53,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji",
+              link: "/pages/index/erji/sanji/sanji?id=",
               txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
+              id: 4,
               collection: 283,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji",
+              link: "/pages/index/erji/sanji/sanji?id=",
               txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
+              id: 5,
               collection: 156,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji",
+              link: "/pages/index/erji/sanji/sanji?id=",
               txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             },
             {
+              id: 6,
               collection: 258,
               picurl: "/images/img1.png",
               picur2: "/images/img1.png",
               picur3: "/images/iocn_xq1.png",
-              link: "/pages/index/erji/erji",
+              link: "/pages/index/erji/sanji/sanji?id=",
+              txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+            },
+            {
+              id: 7,
+              collection: 18,
+              picurl: "/images/img1.png",
+              picur2: "/images/img1.png",
+              picur3: "/images/iocn_xq1.png",
+              link: "/pages/index/erji/sanji/sanji?id=",
               txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
             }
           ]
@@ -186,6 +205,17 @@ Page({
     // console.log(e.target.dataset.link);
     wx.navigateTo({
       url: "/pages/index/more/more"
+    })
+  },
+
+  //去三级详情页
+  gotosanji(e){
+    console.log(e.target.dataset.id);
+    console.log(e.target.dataset.link);
+    var id = e.target.dataset.id;
+    var link = e.target.dataset.link;
+    wx.navigateTo({
+      url: link + id
     })
   },
 

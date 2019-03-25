@@ -38,9 +38,9 @@
       <view style='width: {{windowWidth * 3 / 4 - 10 }}px; padding-left: 10px;' class='rm'>热门品牌</view>
       <view style='width: {{windowWidth * 1 / 4}}px;' class='rm' bindtap='more'>查看更多> </view>
     </view>
-    <view style='width: {{windowWidth}}px; height: 150px;'>
+    <view style='width: {{windowWidth - 5}}px; height: 150px; padding-left: 5px;'>
       <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2 - 15}}px; height: 140px;' class='bj'>
-        <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='gotolink' data-link="{{item.link}}"></image>
+        <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='more' data-link="{{item.link}}"></image>
       </view>
     </view>
   </view>
@@ -59,11 +59,11 @@
   <view style='width: {{windowWidth}}px; height: 650px;  background: #fff; border-radius: 8px;'>
     <view style='width: {{windowWidth}}px; height: 40px;'>
       <view style='width: {{windowWidth * 3 / 4 - 10 }}px; padding-left: 10px;' class='rm'>热门推荐</view>
-      <view style='width: {{windowWidth * 1 / 4}}px;' class='rm' bindtap='more'>查看更多> </view>
+      <view style='width: {{windowWidth * 1 / 4}}px;' class='rm'>查看更多> </view>
     </view>
-    <view style='width: {{windowWidth}}px; height: 200px;'>
+    <view style='width: {{windowWidth - 5}}px; height: 200px; padding-left: 5px;'>
       <view wx:for="{{arr}}" wx:key="{{index}}" style='width: {{windowWidth / 2 - 15}}px; height: 200px; padding-bottom: 10px;' class='bj'>
-        <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='gotolink' data-link="{{item.link}}"></image>
+        <image src='{{item.picurl}}' style='width: {{windowWidth / 2 - 15}}px; height: 140px' bindtap='gotosanji' data-link="{{item.link}}" data-id="{{item.id}}"></image>
         <view style='height: 60px;'>
           <view class='rosepa'>
             {{item.txt}}

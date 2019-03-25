@@ -5,10 +5,12 @@ App({
     wx.getSystemInfo({
       success(res){
         self.globalData.windowWidth = res.windowWidth;
+        self.globalData.windowHeight = res.windowHeight;
       }
     })
   },
   globalData: {
-    windowWidth: 0
+    windowWidth: 0,
+    windowHeight: 0
   }
 })

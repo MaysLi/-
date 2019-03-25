@@ -1,5 +1,5 @@
 <!--pages/index/erji/sanji/sanji.wxml-->
-<text>
-  三级{{id}}
-</text>
+
+<import src='../../../templates/details/details.wxml' />
+<template wx:for='{{item}}' wx:key='{{index}}' is='{{item.usename}}' data='{{...item.info}}' />
  

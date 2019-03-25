@@ -34,9 +34,9 @@
 
 .bj{
   float:left;
-  padding-left: 10px;
+  padding: 0px 5px;
   background: #fff;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .scroll-view-item_H{

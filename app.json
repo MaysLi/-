@@ -11,7 +11,8 @@
     "pages/index/shops/shops",
     "pages/liaotian/xinxi/xinxi",
     "pages/templates/logistics/logistics",
-    "pages/templates/Mores/more"
+    "pages/templates/Mores/more",
+    "pages/templates/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
