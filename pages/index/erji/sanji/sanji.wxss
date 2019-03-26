@@ -32,7 +32,7 @@
 }
 
 .title{
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: bold;
   color: #333;
@@ -49,11 +49,12 @@
   padding: 10px;
   border-bottom: 1px solid whitesmoke;
   background: #fff;
-  height: 16px;
+  height: 20px;
 }
 .b_tit{
   font-size: 12px;
-  height: 16px;
+  line-height: 20px;
+  height: 20px;
   color: #333;
   float: left;
 }
@@ -61,12 +62,15 @@
   width: 16px;
   height: 16px;
   float: right;
+  margin-top: 2px;
 }
 .b_details{
   background: #fff;
+  margin-bottom: 10px;
 }
 .in_tit{
   font-size: 12px;
+  line-height: 18px;
   padding: 15px;
   border-bottom: 1px solid whitesmoke;
 }
@@ -112,7 +116,29 @@
   float: left;
   margin-top: 27px;
 }
+.size{
+  background: #fff;
+  margin-bottom: 10px;
+}
+.size_f{
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 0 10px 10px;
+}
+.s_img{
+  padding-bottom: 10px;
+}
+.size_img1{
+}
 
+.load{
+  font-size: 14px;
+  height: 100px;
+  line-height: 70px;
+  text-align: center;
+  color: #ccc;
+}
 
 
 

@@ -49,6 +49,16 @@ Page({
                   piciocn: '/images/iocn_right.png'
                 }
               ],
+              guide: [
+                {
+                  title: '使用指南',
+                  picurl1: '/images/img1.png',
+                  picurl2: '/images/img1.png',
+                  picurl3: '/images/img1.png',
+                  picurl4: '/images/img1.png',
+                  picurl5: '/images/img1.png',
+                }
+              ],
               _arr: [
                 {
                   pic: '/images/iocn_kf.png',
