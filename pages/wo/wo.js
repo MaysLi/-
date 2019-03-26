@@ -16,7 +16,8 @@ Page({
     id: 430360610,
     menupic: '/images/caidan.png',
     setpic: '/images/shezhi.png',
-    popup: false,
+    popup1: false,
+    popup2: false,
     portrait: '/images/iocn_i1.png',
     follow: '1',
     fans: '5',
@@ -25,87 +26,206 @@ Page({
     item1: [
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '发现好友'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '我的草稿'
       }
     ],
     item2: [
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '购物车'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '订单'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '薯券'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '心愿单'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '衣号店会员'
       }
     ],
     item3: [
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '免流量'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '我的红包'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '帮助与客服'
       },
       {
         picurl: '/images/shezhi.png',
+        iright: '/images/iocn_right.png',
         title: '扫一扫'
       }
     ],
-    lb_id1: 1,
-    title1: '笔记',
-    lb_id2: 2,
-    title2: '收藏',
-    lb_id3: 3,
-    title3: '赞过'
+    setnav1: [
+      '个人资料', '账号与安全', '申请认证'
+    ],
+    setnav2: [
+      '新消息通知', '隐私', '通用'
+    ],
+    setnav3: [
+      '鼓励一下', '关于衣号店', '意见反馈'
+    ],
+    switch_id: 0,
+    usename: 'card',
+    arr: [
+      {
+        bg: true,
+        lb_id: 0,
+        num: 0,
+        title: '笔记',
+      },
+      {
+        bg: true,
+        lb_id: 1,
+        num: 0,
+        title: '收藏',
+      },
+      {
+        bg: true,
+        lb_id: 2,
+        num: 0,
+        title: '赞过',
+      }
+    ],
+    arr1: [
+      {
+        windowWidth: app.globalData.windowWidth,
+        collection: 136,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        windowWidth: app.globalData.windowWidth,
+        collection: 155,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        windowWidth: app.globalData.windowWidth,
+        collection: 256,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      }
+    ],
+    arr2: [
+      {
+        windowWidth: app.globalData.windowWidth,
+        collection: 136,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      }
+    ],
+    arr3: [
+      {
+        windowWidth: app.globalData.windowWidth,
+        collection: 136,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      },
+      {
+        windowWidth: app.globalData.windowWidth,
+        collection: 155,
+        picurl: "/images/img1.png",
+        picurl2: "/images/img1.png",
+        picurl3: "/images/iocn_xq1.png",
+        link: "/pages/index/erji/erji",
+        txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
+      }
+    ]
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 计算笔记 收藏 点赞个数
+    // for(let i=0; i<this.data.arr.length; i++){
+    //   var num = this.data.arr[i].num;
+    //   console.log(num);
+    //   this.setData({
+    //     num: 
+    //   })
+    // }
+    
   },
 
-  // 打开弹出层
+  // 打开弹出层1
   openmenu(){
     this.setData({
-      popup: true
+      popup1: true
     })
   },
-  //关闭弹出层
+  //关闭弹出层1
   closemenu(){
     this.setData({
-      popup: false
+      popup1: false
     })
   },
-  switch(e){
+  // 打开弹出层2
+  getset() {
+    this.setData({
+      popup2: true
+    })
+  },
+  //关闭弹出层2
+  closegetset() {
+    this.setData({
+      popup2: false
+    })
+  },
+  // 卡片
+  setswitch(e){
     console.log(e.target.dataset.id);
-    var v = e.target.dataset.id
-    var id = this.lb_id1
-    console.log(id);
-    this.setDate({
-      [id]: v
+    var v = e.target.dataset.id;
+    // var bg_tit = this.data.arr[v].bg
+    // console.log(bg_tit);
+    this.setData({
+      switch_id: v,
+      // bg_tit: false
     })
   }
 })

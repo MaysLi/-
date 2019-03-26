@@ -1,29 +1,57 @@
 <!--pages/wo/wo.wxml-->
 
 
-<!-- 弹出层 -->
-<view class='t_box' style='width: {{windowWidth}}px; height: {{windowHeight}}px;' wx:if='{{popup}}'>
+<!-- 弹出层1 -->
+<view class='t_box' style='width: {{windowWidth}}px; height: {{windowHeight}}px;' wx:if='{{popup1}}'>
   <view class='box' style='width: {{windowWidth * 2 / 3}}px; height: {{windowHeight}}px;'>
     <view class='b_box'>
       <view class='b_more'>更多</view>
       <view class='b_item' wx:for='{{item1}}' wx:key='{{index}}' style=' height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>
         <image src='{{item.picurl}}' class='b_img' style=' padding: {{(windowHeight * 40 / 555 - 14) / 2}}px 10px;'></image>
         <view class='b_font'>{{item.title}}</view>
+        <image src='{{item.iright}}' class='iocn_right' style=' padding: {{(windowHeight * 40 / 555 - 14) / 2}}px 0;'></image>
       </view>
       <view class='xhr'></view>
       <view class='b_item' wx:for='{{item2}}' wx:key='{{index}}' style=' height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>
         <image src='{{item.picurl}}' class='b_img' style=' padding: {{(windowHeight * 40 / 555 - 14) / 2}}px 10px;'></image>
         <view class='b_font'>{{item.title}}</view>
+        <image src='{{item.iright}}' class='iocn_right' style=' padding: {{(windowHeight * 40 / 555 - 14) / 2}}px 0;'></image>
       </view>
       <view class='xhr'></view>
       <view class='b_item' wx:for='{{item3}}' wx:key='{{index}}' style=' height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>
         <image src='{{item.picurl}}' class='b_img' style=' padding: {{(windowHeight * 40 / 555 - 14) / 2}}px 10px;'></image>
         <view class='b_font'>{{item.title}}</view>
+        <image src='{{item.iright}}' class='iocn_right' style=' padding: {{(windowHeight * 40 / 555 - 14) / 2}}px 0;'></image>
       </view>
     </view>
   </view>
   <view class='box_bg' style='width: {{windowWidth * 1 / 3}}px; height: {{windowHeight}}px;' bindtap='closemenu'></view>
 </view>
+
+<!-- 弹出层2 -->
+<view class='t_box' style='width: {{windowWidth}}px; height: {{windowHeight}}px;' wx:if='{{popup2}}'>
+  <view class='box box_r' style='width: {{windowWidth * 2 / 5}}px; height: {{windowHeight}}px;'>
+    <view class='b_box'>
+      <view class='b_more'>设置</view>
+      <view class='b_item' wx:for='{{setnav1}}' wx:key='{{index}}' style=' height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>
+        <view class='b_font'>{{item}}</view>
+      </view>
+      <view class='xhr'></view>
+      <view class='b_item' wx:for='{{setnav2}}' wx:key='{{index}}' style=' height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>
+        <view class='b_font'>{{item}}</view>
+      </view>
+      <view class='xhr'></view>
+      <view class='b_item' wx:for='{{setnav2}}' wx:key='{{index}}' style=' height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>
+        <view class='b_font'>{{item}}</view>
+      </view>
+      <view>
+        <button class='button_f' style='width: {{windowWidth * 2 / 5 - 20}}px; height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>退出账户</button>
+      </view>
+    </view>
+  </view>
+  <view class='box_bg box_bl' style='width: {{windowWidth * 3 / 5}}px; height: {{windowHeight}}px;' bindtap='closegetset'></view>
+</view>
+
 
 <!-- 头部 -->
 <view class='tou' style='width: {{windowWidth}}px; height: {{windowHeight * 70 / 555}}px;'>
@@ -65,14 +93,19 @@
 <!-- 笔记 收藏 点赞 -->
 <view class='lightbox'>
   <view style='width: {{windowWidth / 2}}px' class='lb_tit'>
-    <view class='tit' style='width: {{windowWidth / 2 / 3}}px' bindtap='switch' data-id='{{lb_id1}}'>{{title1}}</view>
-    <view class='tit' style='width: {{windowWidth / 2 / 3}}px' bindtap='switch' data-id='{{lb_id2}}'>{{title2}}</view>
-    <view class='tit' style='width: {{windowWidth / 2 / 3}}px' bindtap='switch' data-id='{{lb_id3}}'>{{title3}}</view>
+    <view class='tit' wx:for='{{arr}}' wx:key='{{index}}' style='width: {{windowWidth / 2 / 3}}px' bindtap='setswitch' data-id='{{item.lb_id}}'>{{item.title}}</view>
   </view>
-  <!-- 卡片 -->
-  <view class='lb_box'>
-    <template />
-  </view>
+</view>
+<!-- 卡片 -->
+<import src='../templates/card/card.wxml' />
+<view class='lb_box' hidden='{{switch_id != 0}}'>
+  <template wx:for='{{arr1}}' wx:key='{{index}}' is='{{usename}}' data='{{...item}}' />
+</view>
+<view class='lb_box' hidden='{{switch_id != 1}}'>
+  <template wx:for='{{arr2}}' wx:key='{{index}}' is='{{usename}}' data='{{...item}}' />
+</view>
+<view class='lb_box' hidden='{{switch_id != 2}}'>
+  <template wx:for='{{arr3}}' wx:key='{{index}}' is='{{usename}}' data='{{...item}}' />
 </view>
 
 

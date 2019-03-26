@@ -110,6 +110,7 @@
   background: #fff;
   height: 50px;
   border-bottom: 1px solid whitesmoke;
+  margin-bottom: 10px;
 }
 .lb_tit{
   height: 50px;
@@ -119,16 +120,83 @@
 }
 .tit{
   font-size: 16px;
-  color: #999;
+  color: #333;
   float: left;
 }
+.tit_f{
+  font-size: 16px;
+}
+.tit:active{
+  font-size: 18px;
+  font-weight: bold;
+  color: #6CC3C1;
+}
+
+
 .lb_box{
+  display: block;
   margin-bottom: 200px;
 }
 
+/* 卡片 */
+.vi_div{
+  background: #fff;
+  margin-left: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  float: left;
+  overflow: hidden;
+}
+.rosepa{
+  height: 26px; 
+  line-height: 13px;
+  padding-left: 5px;
+  font-size: 9px;
+  color: #707070;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+}
+
+.bjlr{
+  height: 34px;
+  float: left;
+}
+
+.lw{
+  width: 66%;
+  padding-left: 2%;
+}
+
+.rw{
+  width: 32%;
+}
+
+.imgsize{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  float:left;
+  margin: 0 3px 0 3px;
+}
+
+.imgmin{
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.textsize{
+  font-size: 11px;
+  line-height: 25px;
+  float:left;
+}
 
 
-/* 弹出层 */
+
+/* 弹出层1 */
 .t_box{
   position: fixed;
   top: 0;
@@ -139,6 +207,9 @@
 .box{
   float: left;
   background: #fff;
+}
+.box_r{
+  float: right;
 }
 .b_box{
   margin: 15px 30px 0;
@@ -154,11 +225,27 @@
   height: 14px; 
   float: left;
 }
+.iocn_right{
+  width: 14px;
+  height: 14px;
+  float: right;
+}
 .b_font{
   font-size: 14px;
   color: #333;
   float: left;
 }
+.button_f{
+  text-align: center;
+  background: #fff;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  margin-left: -20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 .xhr{
   width: 100%;
   height: 1px;
@@ -166,6 +253,9 @@
   margin: 5px 0;
 }
 .box_bg{
+  float: right;
+}
+.box_bl{
   float: left;
 }
 
