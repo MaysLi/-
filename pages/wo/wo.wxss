@@ -1,1 +1,188 @@
 /* pages/wo/wo.wxss */
+
+/* 头部栏 */
+.tou{
+  height: 70px;
+  border: 1px solid whitesmoke;
+  display: flex;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.t_menu{
+  width: 70px;
+  height: 70px;
+}
+.menupic{
+  width: 20px;
+  height: 20px;
+  margin-top: 30px; 
+  margin-left: 20px; 
+}
+.t_name{
+  flex: 1;
+}
+.name{
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+.id{
+  text-align: center;
+  font-size: 10px;
+  color: rgb(184, 182, 182);
+}
+.t_set{
+  width: 70px;
+  height: 70px;
+}
+.setpic{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 30px; 
+  margin-right: 20px; 
+}
+
+/* 信息栏 */
+.information{
+  height: 150px;
+  background: #fff;
+  border-bottom: 1px solid whitesmoke;
+}
+.portrait{
+  height: 110px;
+}
+.portimg{
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  margin: 20px;
+  float: left;
+}
+.poritem{
+  height: 70px;
+  margin: 25px 20px 15px 0;
+  float: left;
+}
+.p_box{
+  height: 40px;
+  margin-bottom: 5px;
+}
+.poritem_f{
+  height: 40px;
+  float: left;
+}
+.num{
+  color: #333;
+  text-align: center;
+  line-height: 20px;
+}
+.number{
+  font-size: 12px; 
+}
+.num_tit{  
+  font-size: 10px; 
+}
+.p_data{
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 12.5px;
+}
+.p_describe{
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  padding-left: 20px;
+  color: #333;
+}
+
+/* 笔记 收藏 点赞 */
+.lightbox{
+  background: #fff;
+  height: 50px;
+  border-bottom: 1px solid whitesmoke;
+}
+.lb_tit{
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+}
+.tit{
+  font-size: 16px;
+  color: #999;
+  float: left;
+}
+.lb_box{
+  margin-bottom: 200px;
+}
+
+
+
+/* 弹出层 */
+.t_box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.box{
+  float: left;
+  background: #fff;
+}
+.b_box{
+  margin: 15px 30px 0;
+}
+.b_more{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+.b_img{
+  width: 14px;
+  height: 14px; 
+  float: left;
+}
+.b_font{
+  font-size: 14px;
+  color: #333;
+  float: left;
+}
+.xhr{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid whitesmoke;
+  margin: 5px 0;
+}
+.box_bg{
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

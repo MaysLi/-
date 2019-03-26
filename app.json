@@ -12,7 +12,8 @@
     "pages/liaotian/xinxi/xinxi",
     "pages/templates/logistics/logistics",
     "pages/templates/Mores/more",
-    "pages/templates/details/details"
+    "pages/templates/details/details",
+    "pages/templates/card/card"
   ],
   "window": {
     "backgroundTextStyle": "light",
