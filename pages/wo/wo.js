@@ -25,61 +25,61 @@ Page({
     describe: '添加个人描述，可让大家更好地认识你',
     item1: [
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_tianjia.png',
         iright: '/images/iocn_right.png',
         title: '发现好友'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_caogao.png',
         iright: '/images/iocn_right.png',
         title: '我的草稿'
       }
     ],
     item2: [
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_gwc.png',
         iright: '/images/iocn_right.png',
         title: '购物车'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_dingdan.png',
         iright: '/images/iocn_right.png',
         title: '订单'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_shuquan.png',
         iright: '/images/iocn_right.png',
         title: '薯券'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_xinyuan.png',
         iright: '/images/iocn_right.png',
         title: '心愿单'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_hiuyuan.png',
         iright: '/images/iocn_right.png',
         title: '衣号店会员'
       }
     ],
     item3: [
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_liuliang.png',
         iright: '/images/iocn_right.png',
         title: '免流量'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_qianbao.png',
         iright: '/images/iocn_right.png',
-        title: '我的红包'
+        title: '我的钱包'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_bangzhu.png',
         iright: '/images/iocn_right.png',
         title: '帮助与客服'
       },
       {
-        picurl: '/images/shezhi.png',
+        picurl: '/images/iocn_sao.png',
         iright: '/images/iocn_right.png',
         title: '扫一扫'
       }
