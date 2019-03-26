@@ -8,9 +8,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    windowWidth: app.globalData.windowWidth,
+    usename: 'card',
     arr: [
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 136,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -19,6 +20,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 155,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -27,6 +29,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 256,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -35,6 +38,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 145,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -43,6 +47,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 16,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -51,6 +56,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 36,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -59,7 +65,8 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
-        collection:6,
+        windowWidth: app.globalData.windowWidth,
+        collection: 6,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
         picurl3: "/images/iocn_xq1.png",
@@ -67,6 +74,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 20,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",
@@ -75,6 +83,7 @@ Page({
         txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～"
       },
       {
+        windowWidth: app.globalData.windowWidth,
         collection: 56,
         picurl: "/images/img1.png",
         picurl2: "/images/img1.png",

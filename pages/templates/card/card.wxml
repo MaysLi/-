@@ -1,2 +1,17 @@
 <!--pages/templates/card/card.wxml-->
-<text>pages/templates/card/card.wxml</text>
+
+<template name='card'>
+  <view style='width: {{windowWidth / 2 - 15}}px; height:{{2 / 3 * windowWidth + 70}}px;' class='vi_div'>
+    <image src='{{picurl}}' style='width: {{windowWidth / 2 - 15}}px; height:{{2 / 3 * windowWidth}}px;'></image>
+    <view style='width: {{windowWidth / 2 - 20}}px;' class='rosepa'>{{txt}}</view>
+    <view style='height: 30px; padding-top: 7px;'>
+      <view class='bjlr lw' bindtap='shops'>
+        <image src='{{picurl2}}' class='imgsize'></image><text class='textsize'>rosepa</text>
+      </view>
+      <view class='bjlr rw'>
+        <image src='{{picurl3}}' class='imgsize imgmin' bindtap='addnumber' data-url="{{picurl3}}"></image>
+        <text class='textsize' data-number="{{collection}}">{{collection}}</text>
+      </view>
+    </view>
+  </view>
+</template>

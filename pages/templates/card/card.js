@@ -1,11 +1,16 @@
 // pages/templates/card/card.js
+
+
+const app = getApp();
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    windowWidth: app.globalData.windowWidth,
   },
 
   /**
