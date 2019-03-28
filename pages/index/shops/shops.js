@@ -1,66 +1,263 @@
 // pages/index/shops/shops.js
+
+
+const app = getApp();
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    id: 1,
+    windowWidth: app.globalData.windowWidth,
+    windowHeight: app.globalData.windowHeight,
+    item1: {
+      title: 'BT独行少女',
+      number: '75.2万',
+      follow: '已关注',
+      arr: [
+        {
+          id: 1,
+          title: '宝贝'
+        },
+        {
+          id: 2,
+          title: '新品'
+        },
+        {
+          id: 3,
+          title: '活动'
+        },
+        {
+          id: 4,
+          title: '首页'
+        }
+      ]
+    },
+    item2: {
+      picurl: '/images/iocn_i1.png',
+      arr: [
+        {
+          pic: '/images/iocn_gwc.png',
+          title: '全部宝贝'
+        },
+        {
+          pic: '/images/iocn_gwc.png',
+          title: '店铺微淘'
+        },
+        {
+          pic: '/images/iocn_gwc.png',
+          title: '商品分类'
+        },
+        {
+          pic: '/images/iocn_gwc.png',
+          title: '联系客服'
+        }
+      ]
+    },
+    info: {
+      usename: 'show',
+      arr1: [
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 136,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        }
+      ],
+      arr2: [
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 136,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 68,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        }
+      ],
+      arr3: [
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 136,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        }
+      ],
+      arr4: [
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 136,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        },
+        {
+          windowWidth: app.globalData.windowWidth,
+          txt: "🇰🇷韩国首尔七天自由行超强性价比攻略#出行篇✈️ 这次整个旅程都非常的顺利～",
+          picurl: "/images/img1.png",
+          number: 99,
+          link: "/pages/index/erji/erji"
+        }
+      ]
+    }
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad(param) {
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  changenav(e){
+    console.log(e.target.dataset.id);
+    var v = e.target.dataset.id;
+    this.setData({
+      id: v
+    })
   }
+
 })

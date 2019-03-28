@@ -1,0 +1,8 @@
+<!--pages/templates/show/show.wxml-->
+<template name='show'>
+  <view class='show_card' style='width: {{(windowWidth - 30) / 2}}px; height: {{windowWidth * 2 / 3}}px'>
+    <image src='{{picurl}}' style='width: {{(windowWidth - 30) / 2}}px; height: {{(windowWidth - 30) / 2}}px'></image>
+    <view class='show_txt'>{{txt}}</view>
+    <view class='show_num'>￥{{number}}</view>
+  </view>
+</template>

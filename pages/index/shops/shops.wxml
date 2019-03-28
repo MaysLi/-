@@ -1,2 +1,61 @@
 <!--pages/index/shops/shops.wxml-->
-<text>商铺</text>
+
+<view>
+  <!-- 头 -->
+  <view class='headtop' style='width: {{windowWidth}}px; height: {{windowHeight * 1 / 5 - 10}}px'>
+    <view class='tittop'>
+      <!-- 标题 -->
+      <view style='height: 40px'>
+        <view class='btl'>
+          <view class='btl_tit'>{{item1.title}}</view>
+          <view class='btl_num'>粉丝数{{item1.number}}</view>
+        </view>
+        <view class='btr'>
+          <view class='btr_fol'>{{item1.follow}}</view>
+        </view>
+      </view>
+      <!-- 导航 -->
+      <view style='width: {{windowWidth - 100}}px; height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px' class='navbox'>
+        <view wx:for='{{item1.arr}}' wx:key='{{index}}' class='navitem' style='width: {{(windowWidth - 100) / 4}}px; line-height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px'  bindtap='changenav' data-id='{{item.id}}'>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+
+
+<!-- 内容部分 -->
+<view class='centent' style='margin-top: {{windowHeight * 1 / 5 + 10}}px;'>
+  <!-- 首页 -->
+  <view hidden='{{id != 1}}'>
+    <import src='../../templates/show/show.wxml' />
+    <template wx:for='{{info.arr1}}' wx:key='{{index}}' is='{{info.usename}}' data='{{...item}}' />
+  </view>
+  <!-- 宝贝 -->
+  <view hidden='{{id != 2}}'>
+    <import src='../../templates/show/show.wxml' />
+    <template wx:for='{{info.arr2}}' wx:key='{{index}}' is='{{info.usename}}' data='{{...item}}' />
+  </view>
+  <!-- 新品 -->
+  <view hidden='{{id != 3}}'>
+    <import src='../../templates/show/show.wxml' />
+    <template wx:for='{{info.arr3}}' wx:key='{{index}}' is='{{info.usename}}' data='{{...item}}' />
+  </view>
+  <!-- 活动 -->
+  <view hidden='{{id != 4}}'>
+    <import src='../../templates/show/show.wxml' />
+    <template wx:for='{{info.arr4}}' wx:key='{{index}}' is='{{info.usename}}' data='{{...item}}' />
+  </view>
+</view>
+
+
+
+
+  <!-- 脚 -->
+  <view class='footer' style='width: {{windowWidth}}px; height: {{windowHeight * 1 / 10}}px'>
+    <image src='{{item2.picurl}}' class='imgsize' style='padding-top: {{(windowHeight * 1 / 10 - 40) / 2}}px'></image>
+    <view wx:for='{{item2.arr}}' wx:key='{{index}}' class='navpic' style='width: {{(windowWidth - 80) / 4}}px;'>
+      <image src='{{item.pic}}' class='picimg' style='padding-left: {{((windowWidth - 80) / 4 - 20) / 2}}px;'></image>
+      <view class='titsize'>{{item.title}}</view>
+    </view>
+  </view>
+</view>
+

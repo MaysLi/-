@@ -4,7 +4,21 @@
   <view wx:for='{{arr}}' wx:key='{{index}}' style='width: {{windowWidth}}px;'>
     <view>
       <view style='background: #fff;'>
-        <image src='{{item.picurl}}' style='width: {{windowWidth}}px; height: {{windowWidth * 0.8}}px'></image>
+        <swiper
+          indicator-dots="{{true}}"
+          indicator-color="rgba(255,255,255,.5)"
+          indicator-active-color="#ffffff"
+          autoplay="{{true}}"
+          interval="2000"
+          style='width: {{windowWidth}}px; height: {{windowWidth * 0.8}}px'
+        >
+          <block wx:for="{{arr1}}" wx:key="{{index}}">
+            <swiper-item>
+              <image src='{{item.picurl}}' style="width: {{windowWidth}}px; height: {{windowWidth * 0.8}}px" bindtap='bigimg' data-id="{{item.id}}"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+        <!-- <image src='{{item.picurl}}' style='width: {{windowWidth}}px; height: {{windowWidth * 0.8}}px'></image> -->
         <view class='bar'>
           <view class='bar_t'>
             <text class='bar_price'>{{item.price}}</text>

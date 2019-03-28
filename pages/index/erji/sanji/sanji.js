@@ -74,6 +74,24 @@ Page({
                 }
               ]
             }
+          ],
+          arr1: [
+            {
+              id: 1,
+              picurl: "/images/img1.png"
+            },
+            {
+              id: 2,
+              picurl: "/images/img1.png"
+            },
+            {
+              id: 3,
+              picurl: "/images/img1.png"
+            },
+            {
+              id: 4,
+              picurl: "/images/img1.png"
+            }
           ]
         }
       }

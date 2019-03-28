@@ -37,7 +37,7 @@ Page({
     ],
     item2: [
       {
-        picurl: '/images/iocn_gwc.png',
+        picurl: '/images/iocn_gouwuche.png',
         iright: '/images/iocn_right.png',
         title: '购物车'
       },

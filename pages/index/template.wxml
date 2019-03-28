@@ -70,10 +70,11 @@
           </view>
           <view style='height: 30px; padding-top: 4px;'>
             <view class='bjlr lw' bindtap='shops'>
-              <image src='{{item.picur2}}' class='imgsize'></image><text class='textsize'>rosepa</text>
+              <image src='{{item.picur2}}' class='imgsize' data-id='{{item.id}}'></image>
+              <text class='textsize'>rosepa</text>
             </view>
             <view class='bjlr rw'>
-              <image src='{{item.picur3}}' class='imgsize imgmin' bindtap='addnumber' data-url="{{item.picur3}}"></image>
+              <image src='{{item.picur3}}' class='imgsize imgmin' bindtap='addnumber' data-url="{{item.picur3}}" data-id='{{item.id}}'></image>
               <text class='textsize' data-number="{{item.collection}}">{{item.collection}}</text>
             </view>
           </view>

@@ -13,7 +13,8 @@
     "pages/templates/logistics/logistics",
     "pages/templates/Mores/more",
     "pages/templates/details/details",
-    "pages/templates/card/card"
+    "pages/templates/card/card",
+    "pages/templates/show/show"
   ],
   "window": {
     "backgroundTextStyle": "light",
