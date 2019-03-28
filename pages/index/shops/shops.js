@@ -17,42 +17,40 @@ Page({
       title: 'BT独行少女',
       number: '75.2万',
       follow: '已关注',
-      arr: [
-        {
-          id: 1,
-          title: '宝贝'
-        },
-        {
-          id: 2,
-          title: '新品'
-        },
-        {
-          id: 3,
-          title: '活动'
-        },
-        {
-          id: 4,
-          title: '首页'
-        }
-      ]
+      arr1: {
+        id: 1,
+        title: '首页'
+      },
+      arr2: {
+        id: 2,
+        title: '宝贝'
+      },
+      arr3: {
+        id: 3,
+        title: '新品'
+      },
+      arr4: {
+        id: 4,
+        title: '活动'
+      }
     },
     item2: {
       picurl: '/images/iocn_i1.png',
       arr: [
         {
-          pic: '/images/iocn_gwc.png',
+          pic: '/images/iocn_bb.png',
           title: '全部宝贝'
         },
         {
-          pic: '/images/iocn_gwc.png',
+          pic: '/images/iocn_wt.png',
           title: '店铺微淘'
         },
         {
-          pic: '/images/iocn_gwc.png',
+          pic: '/images/iocn_fl.png',
           title: '商品分类'
         },
         {
-          pic: '/images/iocn_gwc.png',
+          pic: '/images/iocn_kf.png',
           title: '联系客服'
         }
       ]

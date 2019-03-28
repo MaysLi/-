@@ -93,7 +93,9 @@
 <!-- 笔记 收藏 点赞 -->
 <view class='lightbox'>
   <view style='width: {{windowWidth / 2}}px' class='lb_tit'>
-    <view class='tit' wx:for='{{arr}}' wx:key='{{index}}' style='width: {{windowWidth / 2 / 3}}px' bindtap='setswitch' data-id='{{item.lb_id}}'>{{item.title}}</view>
+    <view class='tit {{switch_id == _arr1.lb_id ? "tit_t" : null}}' style='width: {{windowWidth / 2 / 3}}px' bindtap='setswitch' data-id='{{_arr1.lb_id}}'>{{_arr1.title}}</view>
+    <view class='tit {{switch_id == _arr2.lb_id ? "tit_t" : null}}' style='width: {{windowWidth / 2 / 3}}px' bindtap='setswitch' data-id='{{_arr2.lb_id}}'>{{_arr2.title}}</view>
+    <view class='tit {{switch_id == _arr3.lb_id ? "tit_t" : null}}' style='width: {{windowWidth / 2 / 3}}px' bindtap='setswitch' data-id='{{_arr3.lb_id}}'>{{_arr3.title}}</view>
   </view>
 </view>
 <!-- 卡片 -->

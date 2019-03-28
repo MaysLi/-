@@ -12,6 +12,12 @@
   margin-left: 5px;
 }
 
+.bg{
+  background: #6CC3C1;
+  color: #fff;
+  font-weight: bold;
+}
+
 
 
 

@@ -1,7 +1,21 @@
 <!--pages/index/erji/erji.wxml-->
 <view>
-  <view class='fon'>二级栏目</view>
-  <view wx:for="{{arr}}" wx:key="{{index}}" class="bj" bindtap='gotosanji' data-id="{{item.id}}">
-    {{item.name}}
+  <view>
+    <view class='box_b1'>热门一类</view>
+    <import src='../../templates/classify/classify.wxml' />
+    <template wx:for='{{item}}' wx:key='{{index}}' is='{{item.usename}}' data='{{...item.info1}}' />
   </view>
+
+  <view>
+    <view class='box_b1'>个性一族</view>
+    <import src='../../templates/classify/classify.wxml' />
+    <template wx:for='{{item}}' wx:key='{{index}}' is='{{item.usename}}' data='{{...item.info2}}' />
+  </view>
+
+  <view>
+    <view class='box_b1'>流行一夏</view>
+    <import src='../../templates/classify/classify.wxml' />
+    <template wx:for='{{item}}' wx:key='{{index}}' is='{{item.usename}}' data='{{...item.info3}}' />
+  </view>
+
 </view>

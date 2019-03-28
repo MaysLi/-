@@ -59,20 +59,18 @@ Page({
                   picurl5: '/images/img1.png',
                 }
               ],
-              _arr: [
-                {
-                  pic: '/images/iocn_kf.png',
-                  tit: '客服'
-                },
-                {
-                  pic: '/images/iocn_dp.png',
-                  tit: '店铺'
-                },
-                {
-                  pic: '/images/iocn_gwc.png',
-                  tit: '购物车'
-                }
-              ]
+              _arr1: {
+                pic: '/images/iocn_kf.png',
+                tit: '客服'
+              },
+              _arr2: {
+                pic: '/images/iocn_dp.png',
+                tit: '店铺'
+              },
+              _arr3: {
+                pic: '/images/iocn_gwc.png',
+                tit: '购物车'
+              }
             }
           ],
           arr1: [

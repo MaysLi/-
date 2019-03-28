@@ -1,16 +1,169 @@
 // pages/index/erji/erji.js
+
+
+const app = getApp();
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    arr: [
-      { "id": 1, "name": "er级页1" },
-      { "id": 2, "name": "er级页2" },
-      { "id": 3, "name": "er级页3" },
-      { "id": 4, "name": "er级页4" },
-      { "id": 5, "name": "er级页5" }
+    item: [
+      {
+        usename: 'classify',
+        info1: {
+          windowWidth: app.globalData.windowWidth,
+          arr: [
+            {
+              id: 1,
+              picurl: '/images/iocn_i1.png',
+              title: "连衣裙"
+            },
+            {
+              id: 2,
+              picurl: '/images/iocn_i1.png',
+              title: "短外套"
+            },
+            {
+              id: 3,
+              picurl: '/images/iocn_i1.png',
+              title: "蕾丝衫"
+            },
+            {
+              id: 4,
+              picurl: '/images/iocn_i1.png',
+              title: "卫衣"
+            },
+            {
+              id: 5,
+              picurl: '/images/iocn_i1.png',
+              title: "绒衫"
+            },
+            {
+              id: 6,
+              picurl: '/images/iocn_i1.png',
+              title: "T恤"
+            },
+            {
+              id: 7,
+              picurl: '/images/iocn_i1.png',
+              title: "两件套"
+            },
+            {
+              id: 8,
+              picurl: '/images/iocn_i1.png',
+              title: "打底衫"
+            },
+            {
+              id: 9,
+              picurl: '/images/iocn_i1.png',
+              title: "马甲"
+            }
+          ]
+        },
+        info2: {
+          windowWidth: app.globalData.windowWidth,
+          arr: [
+            {
+              id: 1,
+              picurl: '/images/iocn_i1.png',
+              title: "连衣裙"
+            },
+            {
+              id: 2,
+              picurl: '/images/iocn_i1.png',
+              title: "短外套"
+            },
+            {
+              id: 3,
+              picurl: '/images/iocn_i1.png',
+              title: "蕾丝衫"
+            },
+            {
+              id: 4,
+              picurl: '/images/iocn_i1.png',
+              title: "卫衣"
+            },
+            {
+              id: 5,
+              picurl: '/images/iocn_i1.png',
+              title: "绒衫"
+            },
+            {
+              id: 6,
+              picurl: '/images/iocn_i1.png',
+              title: "T恤"
+            },
+            {
+              id: 7,
+              picurl: '/images/iocn_i1.png',
+              title: "两件套"
+            },
+            {
+              id: 8,
+              picurl: '/images/iocn_i1.png',
+              title: "打底衫"
+            },
+            {
+              id: 9,
+              picurl: '/images/iocn_i1.png',
+              title: "马甲"
+            }
+          ]
+        },
+        info3: {
+          windowWidth: app.globalData.windowWidth,
+          arr: [
+            {
+              id: 1,
+              picurl: '/images/iocn_i1.png',
+              title: "连衣裙"
+            },
+            {
+              id: 2,
+              picurl: '/images/iocn_i1.png',
+              title: "短外套"
+            },
+            {
+              id: 3,
+              picurl: '/images/iocn_i1.png',
+              title: "蕾丝衫"
+            },
+            {
+              id: 4,
+              picurl: '/images/iocn_i1.png',
+              title: "卫衣"
+            },
+            {
+              id: 5,
+              picurl: '/images/iocn_i1.png',
+              title: "绒衫"
+            },
+            {
+              id: 6,
+              picurl: '/images/iocn_i1.png',
+              title: "T恤"
+            },
+            {
+              id: 7,
+              picurl: '/images/iocn_i1.png',
+              title: "两件套"
+            },
+            {
+              id: 8,
+              picurl: '/images/iocn_i1.png',
+              title: "打底衫"
+            },
+            {
+              id: 9,
+              picurl: '/images/iocn_i1.png',
+              title: "马甲"
+            }
+          ]
+        }
+      }
     ]
   },
   gotosanji(e){

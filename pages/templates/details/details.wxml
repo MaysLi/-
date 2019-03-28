@@ -71,9 +71,17 @@
 
     <!-- 底边栏 -->
     <view class='b_box'>
-      <view wx:for='{{item._arr}}' wx:key='{{index}}' class='kdg' bindtap='shops'>
-        <image src='{{item.pic}}' class='kdg_img'></image>
-        <view class='kdg_f'>{{item.tit}}</view>
+      <view class='kdg'>
+        <image src='{{item._arr1.pic}}' class='kdg_img'></image>
+        <view class='kdg_f'>{{item._arr1.tit}}</view>
+      </view>
+      <view class='kdg' bindtap='shops'>
+        <image src='{{item._arr2.pic}}' class='kdg_img'></image>
+        <view class='kdg_f'>{{item._arr2.tit}}</view>
+      </view>
+      <view class='kdg'>
+        <image src='{{item._arr3.pic}}' class='kdg_img'></image>
+        <view class='kdg_f'>{{item._arr3.tit}}</view>
       </view>
       <view class='jl1' style='width: {{(windowWidth - 150) / 2}}px'>加入购物车</view>
       <view class='jl2' style='width: {{(windowWidth - 150) / 2}}px'>立即购买</view>

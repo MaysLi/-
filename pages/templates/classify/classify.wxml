@@ -1,0 +1,12 @@
+<!--pages/templates/classify/classify.wxml-->
+
+<template name='classify'>
+  <view class='box1' style='width: {{windowWidth - 20}}px;'>
+    <view class='pad'>
+      <view wx:for='{{arr}}' wx:key='{{index}}' class='box' style='width: {{(windowWidth - 20) / 3}}px; '>
+        <image src='{{item.picurl}}' class='imgsize' style='margin-left: {{((windowWidth - 20) / 3 - 80) / 2}}px'></image>
+        <view class='fontsize'>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</template>

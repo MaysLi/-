@@ -1,11 +1,45 @@
 /* pages/index/erji/erji.wxss */
-.fon{
-  text-align: center;
-  font-size: 40px;
-}
+
 .bj{
   width: 750rpx;
   height: 100px;
   box-sizing: border-box;
   border: 1px solid #000;
 }
+
+
+.box_b1{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0 20px 15px;
+}
+.box1{
+  height: 370px;
+  background: #fff;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.pad{
+  height: 370px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.box{
+  float: left;
+}
+.imgsize{
+  width: 80px;
+  height:80px;
+}
+.fontsize{
+  font-size: 14px;
+  text-align: center;
+  height: 30px;
+}
+
+
+
+
+
+
+

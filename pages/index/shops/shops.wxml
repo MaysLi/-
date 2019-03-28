@@ -16,7 +16,10 @@
       </view>
       <!-- 导航 -->
       <view style='width: {{windowWidth - 100}}px; height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px' class='navbox'>
-        <view wx:for='{{item1.arr}}' wx:key='{{index}}' class='navitem' style='width: {{(windowWidth - 100) / 4}}px; line-height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px'  bindtap='changenav' data-id='{{item.id}}'>{{item.title}}</view>
+        <view class='navitem {{id == item1.arr1.id ? "fontcol" : null}}' style='width: {{(windowWidth - 100) / 4}}px; line-height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px'  bindtap='changenav' data-id='{{item1.arr1.id}}'>{{item1.arr1.title}}</view>
+        <view class='navitem {{id == item1.arr2.id ? "fontcol" : null}}' style='width: {{(windowWidth - 100) / 4}}px; line-height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px'  bindtap='changenav' data-id='{{item1.arr2.id}}'>{{item1.arr2.title}}</view>
+        <view class='navitem {{id == item1.arr3.id ? "fontcol" : null}}' style='width: {{(windowWidth - 100) / 4}}px; line-height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px'  bindtap='changenav' data-id='{{item1.arr3.id}}'>{{item1.arr3.title}}</view>
+        <view class='navitem {{id == item1.arr4.id ? "fontcol" : null}}' style='width: {{(windowWidth - 100) / 4}}px; line-height: {{(windowHeight * 1 / 5 - 40) * 6 / 10}}px'  bindtap='changenav' data-id='{{item1.arr4.id}}'>{{item1.arr4.title}}</view>
       </view>
     </view>
   </view>

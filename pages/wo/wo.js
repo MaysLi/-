@@ -95,26 +95,21 @@ Page({
     ],
     switch_id: 0,
     usename: 'card',
-    arr: [
-      {
-        bg: true,
-        lb_id: 0,
-        num: 0,
-        title: '笔记',
-      },
-      {
-        bg: true,
-        lb_id: 1,
-        num: 0,
-        title: '收藏',
-      },
-      {
-        bg: true,
-        lb_id: 2,
-        num: 0,
-        title: '赞过',
-      }
-    ],
+    _arr1: {
+      lb_id: 0,
+      num: 0,
+      title: '笔记',
+    },
+    _arr2: {
+      lb_id: 1,
+      num: 0,
+      title: '收藏',
+    },
+    _arr3: {
+      lb_id: 2,
+      num: 0,
+      title: '赞过',
+    },
     arr1: [
       {
         windowWidth: app.globalData.windowWidth,
@@ -221,11 +216,8 @@ Page({
   setswitch(e){
     console.log(e.target.dataset.id);
     var v = e.target.dataset.id;
-    // var bg_tit = this.data.arr[v].bg
-    // console.log(bg_tit);
     this.setData({
-      switch_id: v,
-      // bg_tit: false
+      switch_id: v
     })
   }
 })
