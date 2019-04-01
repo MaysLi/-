@@ -15,7 +15,8 @@
     "pages/templates/details/details",
     "pages/templates/card/card",
     "pages/templates/show/show",
-    "pages/templates/classify/classify"
+    "pages/templates/classify/classify",
+    "pages/wo/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

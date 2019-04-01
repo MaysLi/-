@@ -4,6 +4,7 @@ const app = getApp();
 
 Page({
   data: {
+    logo: '/images/iocn_i1.png',
     windowWidth: app.globalData.windowWidth,
     item: [
       //轮播

@@ -18,10 +18,10 @@
   background: #fff;
   border-radius: 10px;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 .pad{
   height: 370px;
-  padding-bottom: 20px;
   padding-top: 20px;
 }
 .box{

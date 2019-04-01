@@ -10,6 +10,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    login_follow: true,
+    username: "",
+    password: "",
     windowWidth: app.globalData.windowWidth,
     windowHeight: app.globalData.windowHeight,
     name: '猪猪',
@@ -187,6 +190,33 @@ Page({
     // }
     
   },
+  changeValue(e) {
+    var k = e.target.dataset.k;
+    var v = e.detail.value;
+    this.setData({
+      [k]: v
+    });
+  },
+  submitHandler() {
+    // wx.request({
+    //   url: '', // 仅为示例，并非真实的接口地址
+    //   method: 'POST',
+    //   data: {
+    //     username: this.data.username,
+    //     password: this.data.password
+    //   },
+    //   success(res) {
+    //     wx.showToast({
+    //       title: "成功",
+    //       icon: "success"
+    //     })
+    //   }
+    // })
+    this.setData({
+      login_follow: false
+    })
+    console.log(login_follow);
+  },
 
   // 打开弹出层1
   openmenu(){
@@ -219,5 +249,13 @@ Page({
     this.setData({
       switch_id: v
     })
+  },
+  //去登陆页
+  tologin(){
+    this.setData({
+      login_follow: true
+    })
+    console.log(login_follow);
   }
+
 })

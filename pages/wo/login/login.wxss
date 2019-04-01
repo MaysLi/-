@@ -1,0 +1,31 @@
+/* pages/wo/login/login.wxss */
+
+page{
+  background: #fff;
+}
+
+.container{
+	margin-left:40px;
+}
+.textCtrl{
+  border:1px solid #999;
+  font-size:18px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.button_b{
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid whitesmoke;
+  margin-top: 20px;
+  background: #6CC3C1;
+  color: #fff;
+}
+
+
+
+
+
+
+

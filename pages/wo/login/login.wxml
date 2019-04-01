@@ -1,0 +1,9 @@
+<!--pages/wo/login/login.wxml-->
+<view class="container" style='width: {{windowWidth - 80}}px'>
+  <input class="textCtrl" type="text" data-k="username" bindchange="changeValue" placeholder='请输入用户名/手机号' style='width: {{windowWidth - 80}}px'></input>
+  <input class="textCtrl" type="text" data-k="password" password='true' placeholder='请输入正确密码' bindchange="changeValue"  style='width: {{windowWidth - 80}}px'></input>
+  <view>
+	  <button bindtap="submitHandler" class='button_b' style='width: {{windowWidth - 80}}px'>登陆</button>
+  </view>
+</view>
+

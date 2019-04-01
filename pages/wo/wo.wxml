@@ -1,6 +1,20 @@
 <!--pages/wo/wo.wxml-->
 
 
+<view wx:if='{{login_follow}}'>
+  <view class="container" style='width: {{windowWidth - 80}}px'>
+    <input class="textCtrl" type="text" data-k="username" bindchange="changeValue" placeholder='请输入用户名/手机号' style='width: {{windowWidth - 80}}px'></input>
+    <input class="textCtrl" type="text" data-k="password" password='true' placeholder='请输入正确密码' bindchange="changeValue"  style='width: {{windowWidth - 80}}px'></input>
+    <view>
+      <button bindtap="submitHandler" class='button_b' style='width: {{windowWidth - 80}}px'>登陆</button>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view wx:if='{{!login_follow}}'>
 <!-- 弹出层1 -->
 <view class='t_box' style='width: {{windowWidth}}px; height: {{windowHeight}}px;' wx:if='{{popup1}}'>
   <view class='box' style='width: {{windowWidth * 2 / 3}}px; height: {{windowHeight}}px;'>
@@ -45,7 +59,7 @@
         <view class='b_font'>{{item}}</view>
       </view>
       <view>
-        <button class='button_f' style='width: {{windowWidth * 2 / 5 - 20}}px; height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;'>退出账户</button>
+        <button class='button_f' style='width: {{windowWidth * 2 / 5 - 20}}px; height: {{windowHeight * 40 / 555}}px; line-height: {{windowHeight * 40 / 555}}px;' bindtap='tologin'>退出账户</button>
       </view>
     </view>
   </view>
@@ -108,6 +122,7 @@
 </view>
 <view class='lb_box' hidden='{{switch_id != 2}}'>
   <template wx:for='{{arr3}}' wx:key='{{index}}' is='{{usename}}' data='{{...item}}' />
+</view>
 </view>
 
 
